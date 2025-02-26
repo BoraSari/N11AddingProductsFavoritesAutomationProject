@@ -5,6 +5,7 @@ import Pages.N11LoginPage;
 import Pages.N11ProductDetailsPage;
 import Pages.N11TabBarPage;
 import org.testng.annotations.Test;
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class N11Tests extends BaseTest {
     N11TabBarPage n11TabBarPage;
@@ -12,14 +13,17 @@ public class N11Tests extends BaseTest {
 
     ElectronicProductsPage electronicProductsPage;
     N11ProductDetailsPage productDetailsPage;
+    Dotenv dotenv = Dotenv.load();
 
     @Test(priority = 1)
     public void loginTest()throws InterruptedException{
         loginPage=new N11LoginPage(driver);
         loginPage.getBaseUrl();
         loginPage.navigateLoginPage();
-        loginPage.enterEmail("kingoflight529@gmail.com");
-        loginPage.enterPassword("Aslankral01");
+        String email = dotenv.get("EMAIL");
+        String password = dotenv.get("PASSWORD");
+        loginPage.enterEmail(email);
+        loginPage.enterPassword(password);
         loginPage.clickLoginButton();
     }
 
