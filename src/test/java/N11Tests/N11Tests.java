@@ -29,7 +29,7 @@ public class N11Tests extends BaseTest {
 
     @Test(priority = 1)
     public void loginTest()throws InterruptedException{
-        logger.info("Opening MainPage");
+        logger.info("Opening Main Page");
         loginPage.getBaseUrl();
         logger.info("Navigating Login Page Section");
         loginPage.navigateLoginPage();
