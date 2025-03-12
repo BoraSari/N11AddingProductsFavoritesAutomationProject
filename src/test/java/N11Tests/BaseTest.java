@@ -40,8 +40,12 @@ public class BaseTest {
     }
     @AfterClass
     public void tearDown(){
-        driver.quit();
-        softAssert.assertAll("All tests are asserted.");
+        if(driver!=null){
+            driver.quit();
+            driver=null;
+            softAssert.assertAll("All tests are asserted.");
+        }
+
     }
 
 

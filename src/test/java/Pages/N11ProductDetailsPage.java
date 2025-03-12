@@ -14,7 +14,7 @@ import java.time.Duration;
 public class N11ProductDetailsPage extends BasePage{
 
 
-    @FindBy(css = "ins[content='18999.00']")
+    @FindBy(css = "ins[content='49459.00']")
     private WebElement priceOfSelectedProduct;
 
 
