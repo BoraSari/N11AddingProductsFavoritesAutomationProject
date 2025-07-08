@@ -235,7 +235,8 @@ Açıklama: Seçilen ürünü kullanıcının favoriler listesine ekleme süreci
 Akış: Ürün detay sayfasında "Favorilere Ekle" düğmesine tıklar ve ardından favorilere başarılı bir şekilde eklendiğini gösteren bir onay mesajının veya öğesinin görüntülendiğini doğrular.
 
 Ekran Görüntüleri/GIF'ler
-![image](https://github.com/user-attachments/assets/f82142b2-f03b-414b-ada2-b124baad5e93)
+![image](https://github.com/user-attachments/assets/6e0ac4ff-5660-483c-bd3f-19884e6704e5)
+
 
 
 License
